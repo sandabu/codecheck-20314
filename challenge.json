@@ -1,0 +1,15 @@
+{
+  "main": "es6/src/hello.js",
+  "editable": ["es6/src/*"],
+  "excludes": ["es6/test/*_extra.spec.js"],
+  "test": "mocha",
+  "readme": {
+    "en": "README.md",
+    "ja": "README_ja.md"
+  },
+  "tags": [
+    "JavaScript",
+    "ES6",
+    "Algorithm"
+  ]
+}
