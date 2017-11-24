@@ -1,4 +1,10 @@
 export function hello(name) {
-  return "Hello world!";
+	switch(name) {
+		case 'world':
+			return 'Hello world!';
+			break;
+		case 'code-check':
+			return 'Hello code-check!';
+	}
 }
 

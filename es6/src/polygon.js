@@ -18,12 +18,27 @@ export class Rectangle extends Polygon {
   get area() { return this.height * this.width;}
 }
 
-export class Square {
-  
+export class Square extends Polygon{
+  constructor(height) {
+    super(height, height);
+    this.name = "Square";
+  }
+
+  get area () {
+    return Math.pow(this.height, 2);
+  }
 }
 
-export class Circle {
-  
+export class Circle extends Polygon{
+  constructor(rad) {
+    super(rad * 2, rad * 2);
+    this.rad = rad;
+    this.name = "Circle";
+  }
+
+  get area() {
+    return Math.pow(this.rad, 2) * Math.PI;
+  }
 }
 
 

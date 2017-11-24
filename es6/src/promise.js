@@ -1,4 +1,10 @@
 export function sleep(time) {
-  return null;
+	return new Promise((resolve, reject) => {
+		if(time < 0){
+			reject(time);
+		}
+		setTimeout( () => { resolve(time); }, time);
+	});
+	
 }
 
